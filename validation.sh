@@ -20,13 +20,11 @@ else
     echo "name is invalid"
 fi
 
-echo "enter phone number:"
-read number
-if [[ "$number" =~ ^\d{2}\s\d{10}$ ]]
+echo "Enter Email:"
+read email
+if [[ "$email" =~ ^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$ ]]
 then
-    echo "Phone number is valid"
+    echo "Email address $email is valid."
 else
-    echo "phone number is invalid"
+    echo "Email address $email is invalid."
 fi
-
-
