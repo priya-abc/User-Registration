@@ -26,3 +26,11 @@ then
 else
     echo "Email address $email is invalid."
 fi
+echo "enter phone number:"
+read number
+if [[ "$number" =~ ^\d{2}\s\d{10}$ ]]
+then
+    echo "Phone number is valid"
+else
+    echo "phone number is invalid"
+fi
