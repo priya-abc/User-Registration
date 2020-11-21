@@ -34,3 +34,10 @@ then
 else
     echo "phone number is invalid"
 fi
+echo "enter the password"
+read password
+len="${#password}"
+if test $len -ge 8
+else
+    echo "password lenght should be greater than or equal 8 hence weak password"
+fi
